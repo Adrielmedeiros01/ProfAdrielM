@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulado</title>
+</head>
+
+<style>
+
+
+
+  body {
+    background: linear-gradient(rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+   
+  }
+  
+
+
+  header {
+
+    
+    text-align: center;
+    font-family: cursive;
+  }
+
+
+  header input {
+    width: 30%;
+    height: 2rem;
+    border: 2px solid;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px;
+    transition: 0.1s;
+    cursor: pointer;
+  }
+   header input::placeholder {
+
+     color: rgb(201, 172, 10);
+    
+  }
+  header input:hover {
+    transform: translate(2px, 2px);
+    transition: 0.1s;
+    
+    
+  }
+
+  main {
+
+
+
+  }
+
+  .container{
+    width: 80%;
+    margin: 10% auto;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px;
+    border: 3px solid;
+
+  }
+
+
+  article {
+    margin-top: 3rem;
+  }
+
+
+  article input{
+    width: 90%;
+    height: 2rem;
+    border: 2px solid;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px ;
+    cursor: pointer;
+    transition: 0.1s;
+    
+  }
+
+  article input::placeholder{
+    color: rgb(201, 172, 10);
+  }
+
+  article input:hover{
+    
+    transform: translate(2px, 2px);
+    transition: 0.1s;
+  }
+
+  .salvar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+  }
+
+  .salvar button{
+    padding: 1rem;
+    border: solid 2px black;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px black;
+    transition: 0.1s;
+  }
+
+   .salvar button:hover{
+    transform: translate(2px, 2px);
+    transition: 0.1s;
+  }
+
+  footer {
+    text-align: center;
+    color: black;
+  }
+</style>
+
+<body>
+
+  <header class="container">
+    <h1>SIMULADO DE MATEMÁTICA</h1>
+     <form action="">
+      <!--  <h1>📋 Registro de Alunos</h1>-->
+      <label>Nome:</label>
+      <input type="text" id="nome" placeholder="Digite seu nome aqui">
+      <!--
+      <label>Pontuação:</label>
+      <input type="number" id="pontuacao" placeholder="Digite a pontuação">
+      -->
+    </form>
+  </header>
+
+  <main class="container">
+  
+    <article>
+      <img width="100%" src="Captura de tela 2025-11-12 153718.png" alt="">
+      <label>Resposta:</label>
+      <input type="text" id="resposta1" placeholder="Digite a resposta aqui">
+    </article>
+
+    <article>
+      <img width="100%" src="Captura de tela 2025-11-12 160346.png" alt="">
+      <label>Resposta:</label>
+      <input type="text" id="resposta2" placeholder="Digite a resposta aqui">
+    </article>
+
+    <article>
+      <img width="100%" src="Captura de tela 2025-11-12 160333.png" alt="">
+      <label>Resposta:</label>
+      <input type="text" id="resposta3" placeholder="Digite a resposta aqui">
+    </article>
+
+    <article>
+      <img width="100%" src="Captura de tela 2025-11-12 161326.png" alt="">
+      <label>Resposta:</label>
+      <input type="text" id="resposta4" placeholder="Digite a resposta aqui">
+    </article>
+
+    <article>
+      <img width="100%" src="Captura de tela 2025-11-12 161348.png" alt="">
+      <label>Resposta:</label>
+      <input type="text" id="resposta5" placeholder="Digite a resposta aqui">
+    </article>
+
+    <article>
+      <img width="100%" src="Captura de tela 2025-11-12 163205.png" alt="">
+      <label>Resposta:</label>
+      <input type="text" id="resposta6" placeholder="Digite a resposta aqui">
+    </article>
+
+    <article>
+      <img width="100%" src="Captura de tela 2025-11-12 163217.png" alt="">
+      <label>Resposta:</label>
+      <input type="text" id="resposta7" placeholder="Digite a resposta aqui">
+    </article>
+
+    <article>
+      <img width="100%" src="Captura de tela 2025-11-12 163344.png" alt="">
+      <label>Resposta:</label>
+      <input type="text" id="resposta8" placeholder="Digite a resposta aqui">
+    </article>
+
+    <article>
+      <img width="100%" src="Captura de tela 2025-11-12 163358.png" alt="">
+      <label>Resposta:</label>
+      <input type="text" id="resposta9" placeholder="Digite a resposta aqui">
+    </article>
+
+    <article>
+      <img width="100%" src="Captura de tela 2025-11-12 163632.png" alt="">
+      <label>Resposta:</label>
+      <input type="text" id="resposta10" placeholder="Digite a resposta aqui">
+    </article>
+
+
+
+
+    <div class="salvar">
+      <br><br><br>
+      <button id="salvar">Salvar Respostas</button>
+    </div>
+
+
+  </main>
+
+  <footer>
+      <P>@copy2025-A.M</P>
+  </footer>
+
+  <script>
+
+
+    document.getElementById('salvar').addEventListener('click', () => {
+      const nome = document.getElementById('nome').value;
+      const resposta1 = document.getElementById('resposta1').value;
+      const resposta2 = document.getElementById('resposta2').value;
+      const resposta3 = document.getElementById('resposta3').value;
+      const resposta4 = document.getElementById('resposta4').value;
+      const resposta5 = document.getElementById('resposta5').value;
+      const resposta6 = document.getElementById('resposta6').value;
+      const resposta7 = document.getElementById('resposta7').value;
+      const resposta8 = document.getElementById('resposta8').value;
+      const resposta9 = document.getElementById('resposta9').value;
+      const resposta10 = document.getElementById('resposta10').value;
+      //const pontuacao = document.getElementById('pontuacao').value;
+
+      if (!nome || !resposta1 || !resposta2 || !resposta3 || !resposta4 || !resposta5 || !resposta6 || !resposta7 || !resposta8 || !resposta9 || !resposta10 ) {
+        alert('Preencha todos os campos!');
+        return;
+      }
+
+      // Cria o conteúdo CSV
+      //const cabecalho = "Nome e Resposta\n";
+      const linha = `Nome: ${nome}, Resposta1: ${resposta1}, Resposta2:${resposta2}, Resposta2: ${resposta3} , Resposta3:${resposta3}, Resposta4:${resposta4}, Resposta5:${resposta5}, Resposta6:${resposta6}, Resposta7:${resposta7}, Resposta8:${resposta8}, Resposta9:${resposta9}, Resposta10:${resposta10}\n`;
+      //const csv = cabecalho + linha;
+      const csv = linha;
+
+      // Cria e baixa o arquivo
+      const blob = new Blob([csv], { type: "text/csv;charset=utf-8;" });
+      const link = document.createElement("a");
+      link.href = URL.createObjectURL(blob);
+      link.download = "respostasAluno.csv";
+      link.click();
+    });
+
+  </script>
+
+
+</body>
+
+</html>
