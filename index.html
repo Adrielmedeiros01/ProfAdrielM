@@ -19,7 +19,7 @@
         }
 
         .lad1 {
-            padding: 1rem;
+            padding: 0.5rem;
             width: 5%;
             color: white;
         }
@@ -36,7 +36,7 @@
         .lad3 {
             border: 1px solid;
             width: 60%;
-            padding: 1rem;
+            padding: 0.5rem;
             display: flex;
             justify-content: end;
             align-items: center;
@@ -83,10 +83,20 @@
             text-align: center;
         }
 
+        header {
+            width: 85%;
+            margin: 7.5%;
+            margin-top: 0;
+        }
+
         main {
             width: 85%;
             margin: 7.5%;
             margin-top: 0;
+        }
+
+        .atividades {
+            margin-left: 3rem;
         }
 
         footer {
@@ -102,45 +112,47 @@
 
 <body>
     
-
-
-
     <nav>
         <div class="lad1">
             <img width="60%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREAH6eVwmFf9yp-c_0dg4H9Rxe2GsxXGk-cQ&s" alt="img">
         </div>
-
         <div class="lad2">
-            <p>Adriel M. Araújo</p>
+            <p>Prof. Adriel M. Araújo</p>
         </div>
-
         <div class="lad3">
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Atividades</a></li>
+                <li><a href="#boasV">Home</a></li>
+                <li><a href="#atv">Atividades</a></li>
                 <li><a href="">Sobre</a></li>
             </ul>
         </div>
-        
-
-       
     </nav>
-
-    <main>
-
-
-        <section class="boas_vindas">
+    <header>
+        <section id="boasV" class="boas_vindas">
             <br><br><br><br><br>
             <h1>Bem Vindo ao site do professor Adriel M. Araújo</h1>
             <br>
             <p>Este site tem por objetivo auxiliar os alunos.</p>
         </section>
-
         <section class="imagem_principal">
             <img width="90%" src="https://www.centrodeestudoseformacao.com.br/uploads/blog_posts/467/00i_computer-01.webp" alt="">    
         </section>
+    </header>
 
-
+    <main>
+        <h3>Atividades</h3><br><br>
+        <article id="atv" class="atividades">
+            <ul>
+                <li>Atividade 1: <a href="simuladoMath.html">Simulado Matemática</a></li>
+            </ul>
+        </article>
+        <br><br><br>
+        <h3>Outros</h3><br><br>
+        <article id="atv" class="atividades">
+            <ul>
+                <li>Exemplo: Frequencia, etc <a href="simuladoMath.html"></a></li>
+            </ul>
+        </article>
     </main>
 
     <footer>
