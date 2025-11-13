@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre</title>
+</head>
+
+<style>
+    * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            display: flex;
+            width: 100%;
+            position: fixed;
+            background-color: black;
+        }
+
+        .lad1 {
+            padding: 0.5rem;
+            width: 5%;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .lad2 {
+            width: 30%;
+            padding: 0.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .lad3 {
+            border: 1px solid;
+            width: 60%;
+            padding: 0.5rem;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+        }
+
+        nav img {
+            border-radius: 100%;
+        }
+
+        nav a {
+            list-style-type: none;
+            text-decoration: none;
+            color: white;
+
+        }
+
+        .atividades {
+            margin-left: 3rem;
+        }
+
+        
+        #busca {
+            display: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-left: 1rem;
+        }
+
+         main a {
+            color: blue;
+        }
+
+         footer {
+            text-align: center;
+            padding: 1rem;
+            margin-top: 10rem;
+        }
+
+        @media screen and (max-width: 730px) {
+            .lad3 {
+                display: none;
+            }
+
+            
+        #busca {
+            display: block;
+        }
+        }
+    
+
+</style>
+<body>
+     <nav>
+        <div class="lad1">
+
+            <a href="index.html">   <img width="60%"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREAH6eVwmFf9yp-c_0dg4H9Rxe2GsxXGk-cQ&s"
+                alt="img"></a>
+         
+        </div>
+        <div class="lad2">
+            <a href="index.html"><p>Prof. Adriel M. Araújo</p></a>
+            
+        </div>
+        <div class="lad3">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="atividades.html">Alunos</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+            </ul>
+        </div>
+    </nav>
+    <br><br><br><br><br><br>
+    <header style=" display: flex; justify-content: center; align-items: center;">
+       <h1>Área para professores</h1>
+    </header>
+    <br><br><br>
+    <main style="width: 80%; margin: 20% auto; margin-top: 0;">
+        
+        <br><br><br>
+        <div id="busca">
+            <h3>O que esta buscando ?</h3><br><br>
+            <article class="atividades">
+                <ul>
+                    <li><a href="index.html">Home</a></li><br>
+                    <li><a href="">Área para alunos</a></li><br>
+                    <li><a href="sobre.html">Sobre o professor</a></li>
+                </ul>
+            </article>
+        </div>
+        <br><br>
+        <hr>
+    </main>
+     <footer>
+        <p>@COPY2025-2026 A.M</p>
+    </footer>
+</body>
+
+</html>
