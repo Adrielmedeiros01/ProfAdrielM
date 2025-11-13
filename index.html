@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link style="border-radius: 100%;" rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREAH6eVwmFf9yp-c_0dg4H9Rxe2GsxXGk-cQ&s">
     <title>Site Prof. Adriel M.</title>
 
     <style>
@@ -23,6 +24,10 @@
             padding: 0.5rem;
             width: 5%;
             color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
         }
 
         .lad2 {
@@ -32,6 +37,7 @@
             justify-content: center;
             align-items: center;
             color: white;
+            
         }
 
         .lad3 {
@@ -44,29 +50,8 @@
 
         }
 
-        @media screen and (max-width: 730px) {
-
-            .lad3 {
-                display: none;
-            }
-
-            .feed {
-                flex-direction: column;
-                width: 100%;
-                margin-left: 0;
-            }
-
-            .post1 {
-                margin: 0;
-                width: 100%;
-            }
-
-            .post2 {
-                margin: 0;
-            }
-
-
-
+        nav img {
+            border-radius: 100%;
         }
 
         nav a {
@@ -74,10 +59,6 @@
             text-decoration: none;
             color: white;
 
-        }
-
-        nav img {
-            border-radius: 100%;
         }
 
         nav ul li {
@@ -88,7 +69,6 @@
         .imagem_principal {
             margin-top: 2rem;
             text-align: center;
-
         }
 
         .imagem_principal img {
@@ -114,12 +94,14 @@
             margin-top: 0;
         }
 
+        main a {
+            color: blue;
+        }
+
         .feed {
             width: 100%;
             display: flex;
         }
-
-
 
         .atividades {
             margin-left: 3rem;
@@ -130,6 +112,32 @@
             padding: 1rem;
             margin-top: 10rem;
         }
+
+
+        
+        @media screen and (max-width: 730px) {
+            .lad3 {
+                display: none;
+            }
+
+            .feed {
+                flex-direction: column;
+                width: 100%;
+                margin-left: 0;
+            }
+
+            .post1 {
+                margin: 0;
+                width: 100%;
+            }
+
+            .post2 {
+                margin: 0;
+            }
+        }
+
+
+
     </style>
 </head>
 
@@ -168,11 +176,6 @@
     </header>
 
     <main>
-
-
-
-
-
         <br><br><br>
         <h3>Atividades</h3><br><br>
         <article id="atv" class="atividades">
@@ -188,47 +191,6 @@
             </ul>
         </article>
          <br><br><br>
-
-
-
-
-        <h3>Timeline</h3><br><br>
-        <section id="sobre" class="feed">
-            <article class="post2">
-                <img height="220px" width="90%" src="20250930_170502.jpg" alt="Imagem">
-                <h4>Feira de Ciências</h4><br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias eaque adipisci pariatur necessitatibus error suscipit, dolor odio a culpa, tempore animi veritatis voluptates tempora. Delectus id libero aliquid iure explicabo?</p>
-                <br>
-            </article>
-            <article class="post2">
-                <img height="220px" width="90%" src="20251030_213007.jpg" alt="Imagem">
-                <h4>SNCT - Semana Nacional de Ciência e Tecnologia</h4><br>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis obcaecati neque quam ducimus asperiores optio expedita delectus voluptatibus eius. Soluta quidem quaerat culpa mollitia. Doloremque hic quisquam non natus ex.</p>
-                <br>
-            </article>
-
-
-        </section>
-        <section id="sobre" class="feed">
-            <article class="post2">
-                <img height="220px" width="90%" src="20251031_111018.jpg" alt="Imagem">
-                <h4>PIBID - PROGRAMA DE INICIAÇÃO A DOCÊNCIA</h4><br>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur asperiores deleniti consectetur ipsam quia, rerum, corrupti omnis, laudantium sunt fugiat illo doloribus odit veritatis quibusdam velit minima reiciendis consequuntur dolores!</p>
-                <br>
-            </article>
-            <article class="post2">
-                <img height="220px" width="90%" src="20251030_213007.jpg" alt="Imagem">
-                <h4>SNCT - Semana Nacional de Ciência e Tecnologia</h4><br>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum eos consequatur quis exercitationem perferendis veniam officia. Explicabo, ratione! Praesentium doloremque sed temporibus, corrupti rerum molestiae? Error tempora nihil impedit autem?</p>
-                <br>
-            </article>
-
-
-        </section>
-
-        <br><br><br>
-        <hr>
-
     </main>
 
     <footer>
