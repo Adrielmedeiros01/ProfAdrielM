@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
             margin: 0;
             padding: 0;
         }
+
         nav {
             display: flex;
             width: 100%;
@@ -39,39 +41,54 @@
             display: flex;
             justify-content: end;
             align-items: center;
-          
+
         }
 
-        @media screen and (max-width: 730px){
+        @media screen and (max-width: 730px) {
 
             .lad3 {
                 display: none;
             }
 
+            .feed {
+                flex-direction: column;
+                width: 100%;
+                margin-left: 0;
+            }
 
-            
+            .post1 {
+                margin: 0;
+                width: 100%;
+            }
+
+            .post2 {
+                margin: 0;
+            }
+
+
+
         }
 
         nav a {
             list-style-type: none;
             text-decoration: none;
             color: white;
-            
+
         }
 
         nav img {
             border-radius: 100%;
         }
 
-        nav ul li{
+        nav ul li {
             display: inline;
             margin-left: 1rem;
         }
 
-        .imagem_principal{
+        .imagem_principal {
             margin-top: 2rem;
             text-align: center;
-            
+
         }
 
         .imagem_principal img {
@@ -79,7 +96,8 @@
             border: 1px solid;
             border-radius: 5px;
         }
-        .boas_vindas{
+
+        .boas_vindas {
             padding: 1rem;
             text-align: center;
         }
@@ -96,6 +114,13 @@
             margin-top: 0;
         }
 
+        .feed {
+            width: 100%;
+            display: flex;
+        }
+
+
+
         .atividades {
             margin-left: 3rem;
         }
@@ -103,19 +128,20 @@
         footer {
             text-align: center;
             padding: 1rem;
-            margin-top: 20rem;
+            margin-top: 10rem;
         }
-
     </style>
 </head>
 
 
 
 <body>
-    
+
     <nav>
         <div class="lad1">
-            <img width="60%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREAH6eVwmFf9yp-c_0dg4H9Rxe2GsxXGk-cQ&s" alt="img">
+            <img width="60%"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREAH6eVwmFf9yp-c_0dg4H9Rxe2GsxXGk-cQ&s"
+                alt="img">
         </div>
         <div class="lad2">
             <p>Prof. Adriel M. Araújo</p>
@@ -124,7 +150,7 @@
             <ul>
                 <li><a href="#boasV">Home</a></li>
                 <li><a href="#atv">Atividades</a></li>
-                <li><a href="">Sobre</a></li>
+                <li><a href="#sobre">Sobre</a></li>
             </ul>
         </div>
     </nav>
@@ -136,11 +162,18 @@
             <p>Este site tem por objetivo auxiliar os alunos.</p>
         </section>
         <section class="imagem_principal">
-            <img width="90%" src="https://www.centrodeestudoseformacao.com.br/uploads/blog_posts/467/00i_computer-01.webp" alt="">    
+            <img width="90%"
+                src="https://www.centrodeestudoseformacao.com.br/uploads/blog_posts/467/00i_computer-01.webp" alt="">
         </section>
     </header>
 
     <main>
+
+
+
+
+
+        <br><br><br>
         <h3>Atividades</h3><br><br>
         <article id="atv" class="atividades">
             <ul>
@@ -149,12 +182,47 @@
             </ul>
         </article>
         <br><br><br>
-        <h3>Outros</h3><br><br>
-        <article id="atv" class="atividades">
-            <ul>
-                <li>Exemplo: Frequencia, etc <a href="simuladoMath.html"></a></li>
-            </ul>
-        </article>
+
+
+
+
+        <h3>Timeline</h3><br><br>
+        <section id="sobre" class="feed">
+            <article class="post2">
+                <img height="220px" width="90%" src="20250930_170502.jpg" alt="Imagem">
+                <h4>Feira de Ciências</h4><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias eaque adipisci pariatur necessitatibus error suscipit, dolor odio a culpa, tempore animi veritatis voluptates tempora. Delectus id libero aliquid iure explicabo?</p>
+                <br>
+            </article>
+            <article class="post2">
+                <img height="220px" width="90%" src="20251030_213007.jpg" alt="Imagem">
+                <h4>SNCT - Semana Nacional de Ciência e Tecnologia</h4><br>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis obcaecati neque quam ducimus asperiores optio expedita delectus voluptatibus eius. Soluta quidem quaerat culpa mollitia. Doloremque hic quisquam non natus ex.</p>
+                <br>
+            </article>
+
+
+        </section>
+        <section id="sobre" class="feed">
+            <article class="post2">
+                <img height="220px" width="90%" src="20251031_111018.jpg" alt="Imagem">
+                <h4>PIBID - PROGRAMA DE INICIAÇÃO A DOCÊNCIA</h4><br>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur asperiores deleniti consectetur ipsam quia, rerum, corrupti omnis, laudantium sunt fugiat illo doloribus odit veritatis quibusdam velit minima reiciendis consequuntur dolores!</p>
+                <br>
+            </article>
+            <article class="post2">
+                <img height="220px" width="90%" src="20251030_213007.jpg" alt="Imagem">
+                <h4>SNCT - Semana Nacional de Ciência e Tecnologia</h4><br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum eos consequatur quis exercitationem perferendis veniam officia. Explicabo, ratione! Praesentium doloremque sed temporibus, corrupti rerum molestiae? Error tempora nihil impedit autem?</p>
+                <br>
+            </article>
+
+
+        </section>
+
+        <br><br><br>
+        <hr>
+
     </main>
 
     <footer>
@@ -163,4 +231,5 @@
 
 
 </body>
+
 </html>
