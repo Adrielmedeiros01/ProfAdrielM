@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            display: flex;
+            width: 100%;
+            position: fixed;
+            background-color: black;
+        }
+
+        .lad1 {
+            padding: 1rem;
+            width: 5%;
+            color: white;
+        }
+
+        .lad2 {
+            width: 30%;
+            padding: 0.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .lad3 {
+            border: 1px solid;
+            width: 60%;
+            padding: 1rem;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+          
+        }
+
+        @media screen and (max-width: 730px){
+
+            .lad3 {
+                display: none;
+            }
+            
+        }
+
+        nav a {
+            list-style-type: none;
+            text-decoration: none;
+            color: white;
+            
+        }
+
+        nav img {
+            border-radius: 100%;
+        }
+
+        nav ul li{
+            display: inline;
+            margin-left: 1rem;
+        }
+
+        .imagem_principal{
+            margin-top: 2rem;
+            text-align: center;
+            
+        }
+
+        .imagem_principal img {
+            box-shadow: 5px 5px 5px;
+            border: 1px solid;
+            border-radius: 5px;
+        }
+        .boas_vindas{
+            padding: 1rem;
+            text-align: center;
+        }
+
+        main {
+            width: 85%;
+            margin: 7.5%;
+            margin-top: 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            margin-top: 20rem;
+        }
+
+    </style>
+</head>
+
+
+
+<body>
+    
+
+
+
+    <nav>
+        <div class="lad1">
+            <img width="60%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREAH6eVwmFf9yp-c_0dg4H9Rxe2GsxXGk-cQ&s" alt="img">
+        </div>
+
+        <div class="lad2">
+            <p>Adriel M. Araújo</p>
+        </div>
+
+        <div class="lad3">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Atividades</a></li>
+                <li><a href="">Sobre</a></li>
+            </ul>
+        </div>
+        
+
+       
+    </nav>
+
+    <main>
+
+
+        <section class="boas_vindas">
+            <br><br><br><br><br>
+            <h1>Bem Vindo ao site do professor Adriel M. Araújo</h1>
+            <br>
+            <p>Este site tem por objetivo auxiliar os alunos.</p>
+        </section>
+
+        <section class="imagem_principal">
+            <img width="90%" src="https://www.centrodeestudoseformacao.com.br/uploads/blog_posts/467/00i_computer-01.webp" alt="">    
+        </section>
+
+
+    </main>
+
+    <footer>
+        <p>@COPY2025-2026 A.M</p>
+    </footer>
+
+
+</body>
+</html>
