@@ -109,15 +109,35 @@
         footer {
             text-align: center;
             padding: 1rem;
-            margin-top: 10rem;
+            margin-top: 1rem;
         }
 
         #busca {
             display: none;
+            text-align: center;
+           
+        }
+
+        
+        #busca a{
+            margin-left: 0;
         }
 
 
+        .btn1 {
+            padding: 4px;
+            background-color: white;
+            border: 1px solid;
+            box-shadow: 5px 4px 8px rgb(192, 192, 192);
+            border-radius: 8px;
+            width: 150px; 
         
+        }
+
+        #btn1 {
+            margin-left: 0;
+        }
+
         @media screen and (max-width: 730px) {
             .lad3 {
                 display: none;
@@ -186,12 +206,10 @@
         <br><br><br>
         <div id="busca">
             <h3>O que esta buscando ?</h3><br><br>
-            <article class="atividades">
-                <ul>
-                    <li><a href="atividades.html">Área para alunos</a></li><br>
-                    <li><a href="professores.html">Área para professores</a></li><br>
-                    <li><a href="sobre.html">Sobre o professor</a></li>
-                </ul>
+            <article id="btn1" class="atividades">
+                <a href="atividades.html"><button type="button" class="btn1">Área para alunos</button></a><br><br>
+                <a href="atividades.html"><button type="button" class="btn1">Área para professores</button></a><br><br>
+                <a href="atividades.html"><button type="button" class="btn1">Sobre o professor</button></a>
             </article>
         </div>
         <br><br><br>
